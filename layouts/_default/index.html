@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- THAY ĐỔI TIÊU ĐỀ H1 CỦA HEADER -->
+        <h1>
+            <a href="/" style="text-decoration: none; color: inherit;" class="logo-title">
+                <i class="fas fa-code-branch"></i> THU THỦY DEVLOG
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="/" class="active">Trang chủ</a></li>
+                <li><a href="/about/">Giới thiệu</a></li>
+                <li><a href="/posts/">Bài viết</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            
+            <!-- TIÊU ĐỀ CHÀO MỪNG -->
+            <h1>Xin chào, mình là Vũ Thị Thu Thủy <i class="fas fa-hand-wave"></i></h1>
+
+            <!-- AVATAR TỪ MARKDOWN (GIỮ NGUYÊN NẾU BẠN CẦN HIỂN THỊ ẢNH) -->
+            <div class="hero-content-markdown">
+                {{ .Content }}
+            </div>
+
+            <!-- Dòng giới thiệu nổi bật (GIỮ LẠI VÀ LÀM NỔI BẬT HƠN) -->
+            <div class="hero-intro" style="margin: 30px 0; font-size: 1.6rem; font-weight: 700; color:#d32f2f; line-height:1.5; text-align:center; text-shadow: 1px 1px 4px rgba(0,0,0,0.1);">
+                👋 <span style="color:#1976d2;">Xin chào!</span> Mình là <span style="color:#d81b60;">Thu Thủy</span>, người yêu thích lập trình với 
+                <span style="background: #ffeb3b; color: #000; padding:2px 6px; border-radius:4px;">Java</span> và 
+                <span style="background: #fdd835; color: #000; padding:2px 6px; border-radius:4px;">JavaScript</span>.<br>
+                💡 Tại đây, mình chia sẻ kiến thức, kinh nghiệm học tập và thực hành lập trình.
+            </div>
+
+            <!-- KHU VỰC SKILL BADGES -->
+            <div class="skill-badges">
+                <span class="badge primary-badge"><i class="fab fa-java"></i> Java</span>
+                <span class="badge secondary-badge"><i class="fab fa-js-square"></i> JavaScript</span>
+                <span class="badge neutral-badge"><i class="fas fa-university"></i> HUTECH</span>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="/posts/" class="btn primary">Xem bài viết <i class="fas fa-arrow-right"></i></a>
+                <a href="/about/" class="btn secondary">Giới thiệu về tôi <i class="fas fa-user-circle"></i></a>
+            </div>
+
+            <!-- KHU VỰC SOCIAL LINKS (ĐÃ SỬA LỖI CÚ PHÁP URL) -->
+            <div class="social-links">
+                <a href="https://github.com/ThuThuy-cutei/ThuThuy-cutei" target="_blank" class="social-icon" aria-label="Github"><i class="fab fa-github"></i></a> 
+                <a href="https://www.facebook.com/share/1FCPeyquVG/?mibextid=wwXIfr" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="mailto:thuy.vtt2004.email@example.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+
+        </section>
+
+        <!-- KHU VỰC BÀI VIẾT GẦN ĐÂY -->
+        <section class="recent-posts-section">
+            <h2><i class="fas fa-book-open"></i> Bài Viết Gần Đây</h2>
+            <div class="posts-grid">
+                <!-- Bài 1 (Mẫu) -->
+                <a href="/posts/post-1/" class="post-card">
+                    <h3>Khám Phá Sức Mạnh của JavaScript ES6</h3>
+                    <p>Tìm hiểu các tính năng hiện đại như Arrow Functions, Promises và Async/Await để nâng cao hiệu suất code.</p>
+                    <span class="post-tag">JavaScript</span>
+                </a>
+
+                <!-- Bài 2 (Mẫu) -->
+                <a href="/posts/post-2/" class="post-card">
+                    <h3>Lập Trình Hướng Đối Tượng (OOP) trong Java Cơ Bản</h3>
+                    <p>Tóm tắt 4 trụ cột chính của OOP: Đóng gói, Thừa kế, Đa hình và Trừu tượng hóa, kèm ví dụ thực tế.</p>
+                    <span class="post-tag">Java</span>
+                </a>
+
+                <!-- Bài 3 (Mẫu) -->
+                <a href="/posts/post-3/" class="post-card">
+                    <h3>Xây Dựng RESTful API với Spring Boot</h3>
+                    <p>Hướng dẫn từng bước thiết lập môi trường và tạo endpoint đầu tiên bằng framework Spring Boot.</p>
+                    <span class="post-tag">Spring Boot</span>
+                </a>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="/posts/" class="btn primary" style="background-color: #4a4a4a;">Xem Tất Cả Bài Viết <i class="fas fa-list-alt"></i></a>
+            </div>
+        </section>
+
+        </main>
+    
+    <footer>
+        <!-- CẬP NHẬT TIÊU ĐỀ Ở FOOTER -->
+        <p>&copy; {{ now.Year }} THU THỦY DEVLOG. All rights reserved.</p>
+    </footer>
+</body>
+</html>

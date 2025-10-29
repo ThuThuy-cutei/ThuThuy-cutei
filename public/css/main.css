@@ -1,0 +1,419 @@
+/* 1. Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #343a40;
+}
+
+/* 2. Header and Navigation */
+header {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-bottom: 3px solid #f06292; /* Màu hồng đậm hơn */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f06292;
+    display: inline-block;
+}
+
+/* CẬP NHẬT: STYLE CHO TIÊU ĐỀ LOGO ẤN TƯỢNG HƠN */
+.logo-title {
+    font-size: 1.75rem !important; /* Lớn hơn bình thường */
+    font-weight: 800 !important;
+    
+    /* Hiệu ứng gradient nổi bật (Hồng sang Tím/Xanh) */
+    background: linear-gradient(45deg, #FF6F91, #845EC2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Thêm bóng chữ */
+    text-shadow: 1px 1px 3px rgba(132, 94, 194, 0.3); 
+    
+    transition: all 0.3s ease;
+}
+
+.logo-title:hover {
+    /* Thêm hiệu ứng phóng to và độ bóng khi di chuột */
+    opacity: 1;
+    transform: scale(1.03); 
+    text-shadow: 0 0 10px rgba(255, 111, 145, 0.5); 
+}
+
+.logo-title i {
+    color: #FF6F91; /* Icon giữ màu hồng nổi bật */
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.logo-title:hover i {
+    transform: rotate(5deg); /* Thêm chuyển động xoay nhẹ cho icon */
+}
+/* END CẬP NHẬT */
+
+
+nav {
+    float: right;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #343a40;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #f06292;
+    color: #ffffff;
+}
+
+/* 3. Hero Section (Phần Giới thiệu) */
+.hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    margin-top: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f06292;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 i.fa-hand-wave {
+    color: #ffc107;
+    animation: wave-animation 2.5s infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate( 14.0deg) }
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate( 14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate( 10.0deg) }
+    60% { transform: rotate( 0.0deg) }
+    100% { transform: rotate( 0.0deg) }
+}
+
+/* Avatar Group */
+.hero-avatar-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-content-markdown {
+    display: inline-block; /* Quan trọng để flex hoạt động */
+}
+
+.hero-content-markdown img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    /* CẬP NHẬT: AVATAR SANG HÌNH VUÔNG BO GÓC */
+    border-radius: 10px; 
+    border: 8px solid #f06292; /* Viền chính */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    
+    /* CẬP NHẬT: THÊM HIỆU ỨNG NHỊP ĐẬP (PULSE) */
+    animation: pulse-animation 2s infinite ease-in-out;
+}
+
+/* Hiệu ứng cho avatar phụ (avatar2.jpg) - Giữ nguyên bo tròn nếu có 2 avatar */
+.hero-avatar-group .hero-content-markdown:last-child img {
+    border: 8px solid #42a5f5; /* Màu viền xanh cho avatar phụ */
+    /* Để hình vuông bo góc */
+    border-radius: 20px; 
+    animation: none; /* Không áp dụng pulse cho avatar phụ */
+}
+
+.hero-content-markdown img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Định nghĩa hiệu ứng nhịp đập */
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(240, 98, 146, 0.7); /* Màu hồng của viền */
+    }
+    50% {
+        transform: scale(1.03); /* Phóng to nhẹ */
+        box-shadow: 0 0 0 10px rgba(240, 98, 146, 0); /* Mở rộng bóng mờ */
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(240, 98, 146, 0);
+    }
+}
+/* END CẬP NHẬT AVATAR */
+
+/* Skill Badges */
+.skill-badges {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.badge {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.badge i {
+    margin-right: 5px;
+}
+
+.primary-badge {
+    background-color: #f06292; /* Hồng */
+}
+
+.secondary-badge {
+    background-color: #42a5f5; /* Xanh dương */
+}
+
+.neutral-badge {
+    background-color: #6c757d; /* Xám */
+}
+
+
+/* 4. Buttons (Nút Hành động) */
+.hero-buttons {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn i {
+    margin-left: 10px;
+}
+
+.btn.primary {
+    background-color: #f06292;
+    color: #ffffff;
+}
+
+.btn.primary:hover {
+    background-color: #d84379;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn.secondary {
+    background-color: #ffffff;
+    color: #f06292;
+    border: 2px solid #f06292;
+}
+
+.btn.secondary:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* 5. Social Links */
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: #6c757d;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #f06292;
+    transform: scale(1.1);
+}
+
+/* 6. Recent Posts Section (Khu vực Bài viết Gần đây) */
+.recent-posts-section {
+    padding: 40px 20px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.recent-posts-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #343a40;
+    margin-bottom: 40px;
+}
+
+.recent-posts-section h2 i {
+    color: #f06292;
+    margin-right: 10px;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.post-card {
+    display: block;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: inherit; /* Giữ màu chữ mặc định */
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-color: #f06292;
+}
+
+.post-card h3 {
+    font-size: 1.25rem;
+    margin-top: 0;
+    color: #343a40;
+}
+
+.post-card p {
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.post-tag {
+    display: inline-block;
+    background-color: #f06292;
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* 7. Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #e9ecef;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* 8. Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .logo-title {
+        font-size: 1.5rem !important; /* Nhỏ hơn trên mobile */
+    }
+
+    nav {
+        float: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

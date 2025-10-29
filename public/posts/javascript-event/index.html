@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> | Blog cá nhân của Vũ Thị Thu Thủy</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    
+    <header>
+        <h1>
+            <a href="/" style="text-decoration: none; color: inherit;">Blog cá nhân của Vũ Thị Thu Thủy</a>
+        </h1>
+        <nav>
+            <ul>
+                
+                <li>
+                    <a href="/" >Trang chủ</a>
+                </li>
+                
+                <li>
+                    <a href="/about/" >Giới thiệu</a>
+                </li>
+                
+                <li>
+                    <a href="/posts/" class="active">Bài viết</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-page single-content"> 
+            
+            <div class="content">
+                <h1 align="center" style="color:#c2185b; font-size:2.4rem; font-weight:800; text-shadow:1px 1px 4px rgba(0,0,0,0.1);">
+📝 Xử lý sự kiện (Event) trong JavaScript
+</h1>
+<p>Sự kiện (Event) trong JavaScript giúp website phản hồi các hành động của người dùng như click chuột, nhập dữ liệu, cuộn trang, v.v. Nhờ event, bạn có thể biến trang web tĩnh thành một ứng dụng tương tác sinh động.</p>
+<p>📺 Video Hướng Dẫn Chi Tiết</p>
+<!-- Nhúng video YouTube: https://www.youtube.com/watch?v=ax_tbXygZXQ -->
+<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+<iframe src="https://www.youtube.com/embed/ax_tbXygZXQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
+<ol>
+<li>Cơ chế Hoạt động của Event</li>
+</ol>
+<p>Mỗi khi một hành động xảy ra trên trình duyệt (như tải trang, click chuột, nhấn phím), một &ldquo;Event Object&rdquo; sẽ được tạo ra. Event Listener (bộ lắng nghe sự kiện) được gán vào các phần tử DOM sẽ bắt sự kiện này và kích hoạt các hàm xử lý tương ứng.</p>
+<p>1.1. Luồng sự kiện (Event Flow)</p>
+<p>Sự kiện có ba giai đoạn:</p>
+<p>Capturing Phase (Pha Chụp bắt): Sự kiện đi từ cửa sổ (window) xuống phần tử đích (target element).</p>
+<p>Target Phase (Pha Đích): Sự kiện đến chính phần tử đã kích hoạt.</p>
+<p>Bubbling Phase (Pha Nổi bọt): Sự kiện lan truyền ngược lại từ phần tử đích lên cửa sổ. (Đây là pha mặc định được sử dụng).</p>
+<ol start="2">
+<li>Các Cách Gán Event Listener</li>
+</ol>
+<p>Có ba cách chính để gán một hàm xử lý cho sự kiện.</p>
+<p>2.1. Gán qua thuộc tính HTML (Tuyệt đối KHÔNG nên dùng)</p>
+<p><button onclick="handleClick()">Click Me</button></p>
+<p>Phương pháp này làm lẫn lộn HTML và JavaScript, khó bảo trì.</p>
+<p>2.2. Gán qua thuộc tính DOM Element</p>
+<p>document.getElementById(&ldquo;btn&rdquo;).onclick = function() {
+console.log(&ldquo;Đây là cách gán cũ.&rdquo;);
+// Nhược điểm: Chỉ có thể gán MỘT hàm cho MỘT sự kiện (ví dụ: chỉ 1 hàm cho onclick).
+};</p>
+<p>2.3. Dùng addEventListener (Phương pháp chuẩn)</p>
+<p>Đây là cách tốt nhất, cho phép gán nhiều hàm xử lý cho cùng một sự kiện trên cùng một phần tử.</p>
+<p>// Ví dụ cơ bản
+document.getElementById(&ldquo;btn&rdquo;).addEventListener(&ldquo;click&rdquo;, () =&gt; {
+// Sử dụng console.log() thay vì alert() để code chuyên nghiệp hơn
+console.log(&ldquo;1. Bạn vừa nhấn nút!&rdquo;);
+});</p>
+<p>// Bạn có thể gán thêm một hàm khác
+document.getElementById(&ldquo;btn&rdquo;).addEventListener(&ldquo;click&rdquo;, () =&gt; {
+console.log(&ldquo;2. Hàm thứ hai được kích hoạt.&rdquo;);
+});</p>
+<ol start="3">
+<li>Đối tượng Sự kiện (Event Object)</li>
+</ol>
+<p>Khi một hàm xử lý sự kiện được kích hoạt, JavaScript tự động truyền vào một đối tượng gọi là Event Object. Đối tượng này chứa tất cả thông tin chi tiết về sự kiện vừa xảy ra.</p>
+<p>document.addEventListener(&lsquo;mousemove&rsquo;, function(event) {
+// event là Event Object
+console.log(&ldquo;Tọa độ X:&rdquo;, event.clientX);
+console.log(&ldquo;Loại sự kiện:&rdquo;, event.type); // mousemove
+});</p>
+<p>3.1. Các Phương thức quan trọng</p>
+<p>event.preventDefault(): Ngăn chặn hành động mặc định của trình duyệt (ví dụ: ngăn chặn việc gửi form khi nhấn nút submit).</p>
+<p>event.stopPropagation(): Ngăn chặn sự kiện lan truyền (cả ở pha Capturing và Bubbling) đến các phần tử cha hoặc con.</p>
+<p>Ví dụ về preventDefault()</p>
+<p>const link = document.getElementById(&ldquo;myLink&rdquo;);</p>
+<p>link.addEventListener(&lsquo;click&rsquo;, function(e) {
+// Ngăn chặn liên kết chuyển hướng đến URL
+e.preventDefault();
+console.log(&ldquo;Đã ngăn chặn hành vi mặc định của thẻ <a>.&rdquo;);
+// Thực hiện logic tùy chỉnh tại đây, ví dụ: mở modal
+});</p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vũ Thị Thu Thủy. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

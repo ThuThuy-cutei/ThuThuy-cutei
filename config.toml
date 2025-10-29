@@ -1,0 +1,56 @@
+baseURL = "https://thuthuy-cutei.github.io/"
+languageCode = "vi"
+title = "Blog cá nhân của Vũ Thị Thu Thủy"
+theme = "PaperMod"
+
+# ⚠️ Dòng này đã thay paginate = 5 thành pagination.pagerSize = 5
+pagination.pagerSize = 5
+
+[params]
+  author = "Vũ Thị Thu Thủy"
+  description = "Chia sẻ kiến thức về Java & JavaScript"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  defaultTheme = "auto"
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  showPostImage = false
+  ShowCoverImagesInList = false
+
+
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Trang chủ"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name = "Giới thiệu"
+    url = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Bài viết"
+    url = "/posts/"
+    weight = 3
+
+[params.profileMode]
+  enabled = true
+  title = "Xin chào, mình là Vũ Thị Thu Thủy 👋"
+  subtitle = "Sinh viên năm 3 trường Đại học Công nghệ TP. Hồ Chí Minh (HUTECH). Mình đam mê lập trình và hiện đang tìm hiểu sâu về Java & JavaScript."
+  imageUrl = "images/cert-js1.png"
+  imageWidth = 150
+  imageHeight = 150
+  buttons = [
+    { name = "Xem bài viết", url = "/posts/" },
+    { name = "Giới thiệu", url = "/about/" }
+  ]
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      # Bật tính năng cho phép chèn HTML thô trong Markdown
+      unsafe = true
