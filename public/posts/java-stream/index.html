@@ -1,83 +1,13 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Stream API – Xử lý dữ liệu hiện đại | Blog cá nhân của Vũ Thị Thu Thủy</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <link rel="stylesheet" href="/css/main.css">
-</head>
-<body>
-    
-    <header>
-        <h1>
-            <a href="/" style="text-decoration: none; color: inherit;">Blog cá nhân của Vũ Thị Thu Thủy</a>
-        </h1>
-        <nav>
-            <ul>
-                
-                <li>
-                    <a href="/" >Trang chủ</a>
-                </li>
-                
-                <li>
-                    <a href="/about/" >Giới thiệu</a>
-                </li>
-                
-                <li>
-                    <a href="/posts/" class="active">Bài viết</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="profile-page single-content"> 
-            
-            <div class="content">
-                <h1 id="-java-stream-api--xử-lý-dữ-liệu-hiện-đại-trong-java">☕ Java Stream API – Xử lý dữ liệu hiện đại trong Java</h1>
-<h2 id="-video-minh-họa-chi-tiết">📹 Video minh họa chi tiết</h2>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.15);">
-  <iframe 
-      src="https://www.youtube.com/embed/2StXP1XaU04" 
-      title="Video hướng dẫn Java Stream API"
-      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      allowfullscreen>
-  </iframe>
-</div>
-<hr>
-<h2 id="-tổng-quan-về-stream-api">💡 Tổng quan về Stream API</h2>
-<p><strong>Stream API</strong> được giới thiệu từ <strong>Java 8</strong>, giúp việc xử lý dữ liệu trở nên ngắn gọn, hiện đại và dễ đọc hơn.<br>
-Thay vì dùng vòng lặp truyền thống, bạn có thể <strong>“luồng hóa”</strong> dữ liệu và áp dụng các thao tác như <code>filter()</code>, <code>map()</code>, <code>collect()</code> để xử lý.</p>
-<p>Stream cho phép bạn thực hiện các thao tác chuỗi (chaining operations) trên các tập hợp dữ liệu như <code>List</code> hoặc <code>Array</code> một cách khai báo, giúp code dễ hiểu và dễ bảo trì hơn.</p>
-<hr>
-<h2 id="-ví-dụ-cơ-bản-lọc-và-chuyển-đổi">🧩 Ví dụ cơ bản: Lọc và Chuyển đổi</h2>
-<p>Ví dụ sau đây minh họa cách sử dụng Stream để <strong>lọc những người dùng trên 18 tuổi</strong> và <strong>thu thập tên của họ</strong> thành một danh sách mới:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.List;
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.stream.Collectors;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// Giả sử có class User</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// List&lt;User&gt; users = ... </span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> names <span style="color:#f92672">=</span> users.<span style="color:#a6e22e">stream</span>()
-</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">filter</span>(u <span style="color:#f92672">-&gt;</span> u.<span style="color:#a6e22e">getAge</span>() <span style="color:#f92672">&gt;</span> 18)  <span style="color:#75715e">// Thao tác trung gian (Intermediate Operation)</span>
-</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">map</span>(User::getName)            <span style="color:#75715e">// Thao tác trung gian</span>
-</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">collect</span>(Collectors.<span style="color:#a6e22e">toList</span>()); <span style="color:#75715e">// Thao tác kết thúc (Terminal Operation)</span>
-</span></span></code></pre></div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Vũ Thị Thu Thủy. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
+<!doctype html><html lang=vi><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Java Stream API – Xử lý dữ liệu hiện đại | Blog cá nhân của Vũ Thị Thu Thủy</title><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel=stylesheet><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css><link rel=stylesheet href=https://thuthuy-cutei.github.io/css/main.css></head><body><header><h1><a href=https://thuthuy-cutei.github.io/ style=text-decoration:none;color:inherit>Blog cá nhân của Vũ Thị Thu Thủy</a></h1><nav><ul><li><a href=https://thuthuy-cutei.github.io/>Trang chủ</a></li><li><a href=https://thuthuy-cutei.github.io/about/>Giới thiệu</a></li><li><a href=https://thuthuy-cutei.github.io/posts/ class=active>Bài viết</a></li></ul></nav></header><main><section class="profile-page single-content"><div class=content><article class=post-article><header><h1 class=post-title>Java Stream API – Xử lý dữ liệu hiện đại</h1><div class=post-meta><span class=meta-date><i class="far fa-calendar-alt"></i> October 27, 2025</span>
+<span class=meta-author><i class="fas fa-user"></i> Vũ Thị Thu Thủy</span>
+<span class=meta-reading-time><i class="far fa-clock"></i> 1 phút đọc</span></div></header><div class=post-body><h1 id=-java-stream-api--xử-lý-dữ-liệu-hiện-đại-trong-java>☕ Java Stream API – Xử lý dữ liệu hiện đại trong Java</h1><h2 id=-video-minh-họa-chi-tiết>📹 Video minh họa chi tiết</h2><div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;border-radius:12px;box-shadow:0 0 10px rgba(0,0,0,.15)"><iframe src=https://www.youtube.com/embed/2StXP1XaU04 title="Video hướng dẫn Java Stream API" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><h2 id=-tổng-quan-về-stream-api>💡 Tổng quan về Stream API</h2><p><strong>Stream API</strong> được giới thiệu từ <strong>Java 8</strong>, giúp việc xử lý dữ liệu trở nên ngắn gọn, hiện đại và dễ đọc hơn.<br>Thay vì dùng vòng lặp truyền thống, bạn có thể <strong>“luồng hóa”</strong> dữ liệu và áp dụng các thao tác như <code>filter()</code>, <code>map()</code>, <code>collect()</code> để xử lý.</p><p>Stream cho phép bạn thực hiện các thao tác chuỗi (chaining operations) trên các tập hợp dữ liệu như <code>List</code> hoặc <code>Array</code> một cách khai báo, giúp code dễ hiểu và dễ bảo trì hơn.</p><hr><h2 id=-ví-dụ-cơ-bản-lọc-và-chuyển-đổi>🧩 Ví dụ cơ bản: Lọc và Chuyển đổi</h2><p>Ví dụ sau đây minh họa cách sử dụng Stream để <strong>lọc những người dùng trên 18 tuổi</strong> và <strong>thu thập tên của họ</strong> thành một danh sách mới:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#f92672>import</span> java.util.List;
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> java.util.stream.Collectors;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// Giả sử có class User</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// List&lt;User&gt; users = ... </span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>String<span style=color:#f92672>&gt;</span> names <span style=color:#f92672>=</span> users.<span style=color:#a6e22e>stream</span>()
+</span></span><span style=display:flex><span>  .<span style=color:#a6e22e>filter</span>(u <span style=color:#f92672>-&gt;</span> u.<span style=color:#a6e22e>getAge</span>() <span style=color:#f92672>&gt;</span> 18)  <span style=color:#75715e>// Thao tác trung gian (Intermediate Operation)</span>
+</span></span><span style=display:flex><span>  .<span style=color:#a6e22e>map</span>(User::getName)            <span style=color:#75715e>// Thao tác trung gian</span>
+</span></span><span style=display:flex><span>  .<span style=color:#a6e22e>collect</span>(Collectors.<span style=color:#a6e22e>toList</span>()); <span style=color:#75715e>// Thao tác kết thúc (Terminal Operation)</span>
+</span></span></code></pre></div></div><footer></footer></article></div></section></main><footer><p>&copy; 2025 Vũ Thị Thu Thủy. All rights reserved.</p></footer></body></html>

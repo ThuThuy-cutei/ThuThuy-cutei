@@ -1,102 +1,15 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> | Blog cá nhân của Vũ Thị Thu Thủy</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <link rel="stylesheet" href="/css/main.css">
-</head>
-<body>
-    
-    <header>
-        <h1>
-            <a href="/" style="text-decoration: none; color: inherit;">Blog cá nhân của Vũ Thị Thu Thủy</a>
-        </h1>
-        <nav>
-            <ul>
-                
-                <li>
-                    <a href="/" >Trang chủ</a>
-                </li>
-                
-                <li>
-                    <a href="/about/" >Giới thiệu</a>
-                </li>
-                
-                <li>
-                    <a href="/posts/" class="active">Bài viết</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="profile-page single-content"> 
-            
-            <div class="content">
-                <h1 align="center" style="color:#d32f2f; font-size:2.4rem; font-weight:800; text-shadow:1px 1px 4px rgba(0,0,0,0.1);">
-⚡ Async/Await – Viết code bất đồng bộ như đồng bộ
-</h1>
-<p>Lập trình bất đồng bộ (asynchronous) là khái niệm quan trọng trong JavaScript. Nó giúp code không bị &ldquo;đơ&rdquo; khi chờ các tác vụ tốn thời gian như tải dữ liệu, đọc file hay truy cập API.</p>
-<p>Từ ES8, JS giới thiệu cú pháp async/await (được xây dựng trên Promises) giúp việc viết code bất đồng bộ trở nên dễ hiểu, sạch sẽ hơn và trông giống như code đồng bộ (synchronous) thông thường.</p>
-<h2 style="color:#ff6f00; font-size:1.8rem; font-weight:700; margin-top:30px; text-shadow:1px 1px 3px rgba(0,0,0,0.1);">
-1️⃣ Promises – Nền tảng của Async/Await
-</h2>
-<p>Trước khi có async/await, Promises là cách chuẩn để xử lý bất đồng bộ, giúp tránh tình trạng &ldquo;Callback Hell&rdquo;.</p>
-<p>Promise là một đối tượng đại diện cho việc hoàn thành (hoặc thất bại) của một thao tác bất đồng bộ.</p>
-<p>Nó có ba trạng thái: pending (đang chờ), fulfilled (hoàn thành) và rejected (thất bại).</p>
-<p>function delay(ms) {
-return new Promise(resolve =&gt; setTimeout(resolve, ms));
-}</p>
-<p>delay(2000)
-.then(() =&gt; console.log(&ldquo;Đã đợi 2 giây!&rdquo;))
-.catch(error =&gt; console.error(&ldquo;Có lỗi xảy ra:&rdquo;, error));</p>
-<p>🎥 Video minh họa: Async/Await trong JavaScript </h2></p>
-<div class="video-wrapper">
-<h2 style="color:#d32f2f; text-align:center; font-size:1.5rem; margin-bottom:10px;"> 🎥 Async/Await chi tiết (nguồn: YouTube) </h2>
-<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px;">
-<!-- Đã sửa lỗi: URL nhúng trực tiếp -->
-<iframe src="https://www.youtube.com/embed/670f71LTWpM" title="Async/Await trong JavaScript" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-</div>
-<p>2️⃣ Cú pháp async và await </h2> <h3 style="color:#ff8f00; font-size:1.5rem; font-weight:600; margin-top:20px;"></p>
-<p>2️.1. async Function </h2> <h3 style="color:#ff8f00; font-size:1.5rem; font-weight:600; margin-top:20px;"></p>
-<p>Bạn phải đặt từ khóa async trước bất kỳ hàm nào muốn sử dụng await. Hàm async luôn trả về một Promise.</p>
-<p>2.2. await Keyword</p>
-<p>await chỉ có thể được sử dụng bên trong một hàm async.</p>
-<p>Nó tạm dừng việc thực thi hàm async cho đến khi Promise ở phía trước nó được giải quyết (resolved) và trả về giá trị kết quả.</p>
-<p>Ví dụ Thực tế (API Fetch)</p>
-<p>// Hàm async luôn trả về Promise
+<!doctype html><html lang=vi><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>| Blog cá nhân của Vũ Thị Thu Thủy</title><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel=stylesheet><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css><link rel=stylesheet href=https://thuthuy-cutei.github.io/css/main.css></head><body><header><h1><a href=https://thuthuy-cutei.github.io/ style=text-decoration:none;color:inherit>Blog cá nhân của Vũ Thị Thu Thủy</a></h1><nav><ul><li><a href=https://thuthuy-cutei.github.io/>Trang chủ</a></li><li><a href=https://thuthuy-cutei.github.io/about/>Giới thiệu</a></li><li><a href=https://thuthuy-cutei.github.io/posts/ class=active>Bài viết</a></li></ul></nav></header><main><section class="profile-page single-content"><div class=content><article class=post-article><header><h1 class=post-title></h1><div class=post-meta><span class=meta-date><i class="far fa-calendar-alt"></i> January 1, 0001</span>
+<span class=meta-author><i class="fas fa-user"></i> Vũ Thị Thu Thủy</span>
+<span class=meta-reading-time><i class="far fa-clock"></i> 2 phút đọc</span></div></header><div class=post-body><h1 align=center style="color:#d32f2f;font-size:2.4rem;font-weight:800;text-shadow:1px 1px 4px rgba(0,0,0,.1)">⚡ Async/Await – Viết code bất đồng bộ như đồng bộ</h1><p>Lập trình bất đồng bộ (asynchronous) là khái niệm quan trọng trong JavaScript. Nó giúp code không bị &ldquo;đơ&rdquo; khi chờ các tác vụ tốn thời gian như tải dữ liệu, đọc file hay truy cập API.</p><p>Từ ES8, JS giới thiệu cú pháp async/await (được xây dựng trên Promises) giúp việc viết code bất đồng bộ trở nên dễ hiểu, sạch sẽ hơn và trông giống như code đồng bộ (synchronous) thông thường.</p><h2 style="color:#ff6f00;font-size:1.8rem;font-weight:700;margin-top:30px;text-shadow:1px 1px 3px rgba(0,0,0,.1)">1️⃣ Promises – Nền tảng của Async/Await</h2><p>Trước khi có async/await, Promises là cách chuẩn để xử lý bất đồng bộ, giúp tránh tình trạng &ldquo;Callback Hell&rdquo;.</p><p>Promise là một đối tượng đại diện cho việc hoàn thành (hoặc thất bại) của một thao tác bất đồng bộ.</p><p>Nó có ba trạng thái: pending (đang chờ), fulfilled (hoàn thành) và rejected (thất bại).</p><p>function delay(ms) {
+return new Promise(resolve => setTimeout(resolve, ms));
+}</p><p>delay(2000)
+.then(() => console.log(&ldquo;Đã đợi 2 giây!&rdquo;))
+.catch(error => console.error(&ldquo;Có lỗi xảy ra:&rdquo;, error));</p><p>🎥 Video minh họa: Async/Await trong JavaScript</h2></p><div class=video-wrapper><h2 style=color:#d32f2f;text-align:center;font-size:1.5rem;margin-bottom:10px>🎥 Async/Await chi tiết (nguồn: YouTube)</h2><div class=video-container style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;border-radius:12px><iframe src=https://www.youtube.com/embed/670f71LTWpM title="Async/Await trong JavaScript" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div><p>2️⃣ Cú pháp async và await</h2><h3 style=color:#ff8f00;font-size:1.5rem;font-weight:600;margin-top:20px></p><p>2️.1. async Function</h2><h3 style=color:#ff8f00;font-size:1.5rem;font-weight:600;margin-top:20px></p><p>Bạn phải đặt từ khóa async trước bất kỳ hàm nào muốn sử dụng await. Hàm async luôn trả về một Promise.</p><p>2.2. await Keyword</p><p>await chỉ có thể được sử dụng bên trong một hàm async.</p><p>Nó tạm dừng việc thực thi hàm async cho đến khi Promise ở phía trước nó được giải quyết (resolved) và trả về giá trị kết quả.</p><p>Ví dụ Thực tế (API Fetch)</p><p>// Hàm async luôn trả về Promise
 async function loadData() {
 try {
-console.log(&ldquo;1. Bắt đầu gọi API&hellip;&rdquo;);</p>
-<p>loadData();
+console.log(&ldquo;1. Bắt đầu gọi API&mldr;&rdquo;);</p><p>loadData();
 // Lưu ý: Code sau khi gọi loadData() sẽ chạy ngay lập tức,
 // không bị blocking, vì loadData() là hàm bất đồng bộ.
-console.log(&ldquo;5. Code tiếp theo chạy ngay lập tức.&rdquo;);</p>
-<ol start="3">
-<li>Xử lý Lỗi (Error Handling)</li>
-</ol>
-<p>Khi sử dụng async/await, chúng ta sử dụng khối try&hellip;catch giống như xử lý code đồng bộ để bắt lỗi nếu Promise bị rejected. Điều này đơn giản và dễ quản lý hơn nhiều so với việc dùng .catch() liên tục.</p>
-<p>Mọi lỗi bên trong hàm async (ví dụ: lỗi mạng, Promise bị reject) sẽ được bắt bởi khối catch.</p>
-<p>async function safeLoadData(url) {
+console.log(&ldquo;5. Code tiếp theo chạy ngay lập tức.&rdquo;);</p><ol start=3><li>Xử lý Lỗi (Error Handling)</li></ol><p>Khi sử dụng async/await, chúng ta sử dụng khối try&mldr;catch giống như xử lý code đồng bộ để bắt lỗi nếu Promise bị rejected. Điều này đơn giản và dễ quản lý hơn nhiều so với việc dùng .catch() liên tục.</p><p>Mọi lỗi bên trong hàm async (ví dụ: lỗi mạng, Promise bị reject) sẽ được bắt bởi khối catch.</p><p>async function safeLoadData(url) {
 try {
-const response = await fetch(url);</p>
-
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Vũ Thị Thu Thủy. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
+const response = await fetch(url);</p></div><footer></footer></article></div></section></main><footer><p>&copy; 2025 Vũ Thị Thu Thủy. All rights reserved.</p></footer></body></html>

@@ -1,65 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Posts on Blog cá nhân của Vũ Thị Thu Thủy</title>
-    <link>https://thuthuy-cutei.github.io/posts/</link>
-    <description>Recent content in Posts on Blog cá nhân của Vũ Thị Thu Thủy</description>
-    <generator>Hugo -- 0.151.2</generator>
-    <language>vi</language>
-    <lastBuildDate>Mon, 27 Oct 2025 11:10:00 +0700</lastBuildDate>
-    <atom:link href="https://thuthuy-cutei.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>✨ ECMAScript 6 (ES6) – Kỷ nguyên mới của JavaScript</title>
-      <link>https://thuthuy-cutei.github.io/posts/javascript-es6/</link>
-      <pubDate>Mon, 27 Oct 2025 11:10:00 +0700</pubDate>
-      <guid>https://thuthuy-cutei.github.io/posts/javascript-es6/</guid>
-      <description>&lt;h1 align=&#34;center&#34; style=&#34;color:#2980b9; font-size:2.4rem; font-weight:800; text-shadow:1px 1px 4px rgba(0,0,0,0.1);&#34;&gt; ✨ ECMAScript 6 (ES6) – Kỷ nguyên mới của JavaScript &lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Blog cá nhân của Vũ Thị Thu Thủy</title><link>https://thuthuy-cutei.github.io/posts/</link><description>Recent content in Posts on Blog cá nhân của Vũ Thị Thu Thủy</description><generator>Hugo -- 0.151.2</generator><language>vi</language><lastBuildDate>Mon, 27 Oct 2025 11:10:00 +0700</lastBuildDate><atom:link href="https://thuthuy-cutei.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>✨ ECMAScript 6 (ES6) – Kỷ nguyên mới của JavaScript</title><link>https://thuthuy-cutei.github.io/posts/javascript-es6/</link><pubDate>Mon, 27 Oct 2025 11:10:00 +0700</pubDate><guid>https://thuthuy-cutei.github.io/posts/javascript-es6/</guid><description>&lt;h1 align="center" style="color:#2980b9; font-size:2.4rem; font-weight:800; text-shadow:1px 1px 4px rgba(0,0,0,0.1);"&gt; ✨ ECMAScript 6 (ES6) – Kỷ nguyên mới của JavaScript &lt;/h1&gt;
 🌍 Giới thiệu
 ECMAScript 6 (ES6) – hay còn gọi là ECMAScript 2015 – là bản nâng cấp lớn nhất trong lịch sử JavaScript.
 Phiên bản này mang lại cú pháp hiện đại, tối ưu hiệu năng, và dễ bảo trì hơn, giúp JavaScript trở thành một ngôn ngữ mạnh mẽ thực thụ.
-&lt;p&gt;🎥 Video minh họa tổng quan về ES6&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Kiến thức cơ bản về JavaScript</title>
-      <link>https://thuthuy-cutei.github.io/posts/javascript-can-ban/</link>
-      <pubDate>Mon, 27 Oct 2025 10:30:00 +0700</pubDate>
-      <guid>https://thuthuy-cutei.github.io/posts/javascript-can-ban/</guid>
-      <description>&lt;h1 align=&#34;center&#34; style=&#34;color:#f57c00; font-size:2.4rem; font-weight:800; text-shadow:1px 1px 4px rgba(0,0,0,0.1);&#34;&gt; ✨ Kiến thức cơ bản về JavaScript &lt;/h1&gt;
-🧩 Giới thiệu
-JavaScript (JS) là ngôn ngữ lập trình phổ biến nhất cho web hiện đại.
-Nếu HTML giúp tạo cấu trúc và CSS giúp định dạng giao diện, thì JavaScript chính là ngôn ngữ mang lại tính năng động,tương tác cho trang web.
+&lt;p&gt;🎥 Video minh họa tổng quan về ES6&lt;/p&gt;</description></item><item><title>Kiến thức cơ bản về JavaScript</title><link>https://thuthuy-cutei.github.io/posts/javascript-can-ban/</link><pubDate>Mon, 27 Oct 2025 10:30:00 +0700</pubDate><guid>https://thuthuy-cutei.github.io/posts/javascript-can-ban/</guid><description>&lt;h1 align="center" style="color:#f57c00; font-size:2.4rem; font-weight:800; text-shadow:1px 1px 4px rgba(0,0,0,0.1);"&gt;
+✨ Kiến thức cơ bản về JavaScript
+&lt;/h1&gt;
+&lt;h2 id="-giới-thiệu"&gt;🧩 Giới thiệu&lt;/h2&gt;
+&lt;p&gt;JavaScript (JS) là ngôn ngữ lập trình phổ biến nhất cho web hiện đại.&lt;br&gt;
+Nếu &lt;strong&gt;HTML&lt;/strong&gt; giúp tạo cấu trúc và &lt;strong&gt;CSS&lt;/strong&gt; giúp định dạng giao diện, thì &lt;strong&gt;JavaScript&lt;/strong&gt; chính là ngôn ngữ mang lại tính năng &lt;strong&gt;động, tương tác&lt;/strong&gt; cho trang web.&lt;/p&gt;
 &lt;p&gt;JavaScript có thể:&lt;/p&gt;
-&lt;p&gt;Thay đổi nội dung và kiểu dáng của HTML, CSS.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Java Stream API – Xử lý dữ liệu hiện đại</title>
-      <link>https://thuthuy-cutei.github.io/posts/java-stream/</link>
-      <pubDate>Mon, 27 Oct 2025 10:25:00 +0700</pubDate>
-      <guid>https://thuthuy-cutei.github.io/posts/java-stream/</guid>
-      <description>&lt;h1 id=&#34;-java-stream-api--xử-lý-dữ-liệu-hiện-đại-trong-java&#34;&gt;☕ Java Stream API – Xử lý dữ liệu hiện đại trong Java&lt;/h1&gt;
-&lt;h2 id=&#34;-video-minh-họa-chi-tiết&#34;&gt;📹 Video minh họa chi tiết&lt;/h2&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.15);&#34;&gt;
-  &lt;iframe 
-      src=&#34;https://www.youtube.com/embed/2StXP1XaU04&#34; 
-      title=&#34;Video hướng dẫn Java Stream API&#34;
-      style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;&#34;
-      allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; 
-      allowfullscreen&gt;
-  &lt;/iframe&gt;
+&lt;ul&gt;
+&lt;li&gt;Thay đổi nội dung và kiểu dáng của HTML, CSS.&lt;/li&gt;
+&lt;li&gt;Phản hồi các hành động của người dùng (click, nhập liệu, cuộn trang, v.v.).&lt;/li&gt;
+&lt;li&gt;Tương tác với server thông qua API.&lt;/li&gt;
+&lt;li&gt;Xây dựng ứng dụng web, mobile, desktop (với Node.js, React, Electron&amp;hellip;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); padding: 16px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align:center; margin: 30px 0;"&gt;
+&lt;h2 style="color:#e65100; font-weight:800; font-size:1.8rem; margin-bottom:12px;"&gt;
+🎥 Video minh họa học JavaScript cơ bản
+&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 10px;"&gt;
+&lt;iframe
+src="https://www.youtube.com/embed/0LX_B3-0XuU?list=PL33lvabfss1yGrOutFR03OZoqm91TSsvs"
+title="Video hướng dẫn JavaScript cơ bản"
+style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;-tổng-quan-về-stream-api&#34;&gt;💡 Tổng quan về Stream API&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Stream API&lt;/strong&gt; được giới thiệu từ &lt;strong&gt;Java 8&lt;/strong&gt;, giúp việc xử lý dữ liệu trở nên ngắn gọn, hiện đại và dễ đọc hơn.&lt;br&gt;
-Thay vì dùng vòng lặp truyền thống, bạn có thể &lt;strong&gt;“luồng hóa”&lt;/strong&gt; dữ liệu và áp dụng các thao tác như &lt;code&gt;filter()&lt;/code&gt;, &lt;code&gt;map()&lt;/code&gt;, &lt;code&gt;collect()&lt;/code&gt; để xử lý.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Tìm hiểu Java Collection Framework</title>
-      <link>https://thuthuy-cutei.github.io/posts/java-collection/</link>
-      <pubDate>Mon, 27 Oct 2025 10:20:00 +0700</pubDate>
-      <guid>https://thuthuy-cutei.github.io/posts/java-collection/</guid>
-      <description>&lt;h1 id=&#34;-tìm-hiểu-java-collection-framework&#34;&gt;🧰 Tìm hiểu Java Collection Framework&lt;/h1&gt;
+&lt;h2 id="-cấu-trúc-một-chương-trình-javascript"&gt;🔹 Cấu trúc một chương trình JavaScript&lt;/h2&gt;
+&lt;p&gt;Một chương trình JS thường được viết trong thẻ &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; hoặc trong file &lt;code&gt;.js&lt;/code&gt; riêng.&lt;/p&gt;</description></item><item><title>Java Stream API – Xử lý dữ liệu hiện đại</title><link>https://thuthuy-cutei.github.io/posts/java-stream/</link><pubDate>Mon, 27 Oct 2025 10:25:00 +0700</pubDate><guid>https://thuthuy-cutei.github.io/posts/java-stream/</guid><description>&lt;h1 id="-java-stream-api--xử-lý-dữ-liệu-hiện-đại-trong-java"&gt;☕ Java Stream API – Xử lý dữ liệu hiện đại trong Java&lt;/h1&gt;
+&lt;h2 id="-video-minh-họa-chi-tiết"&gt;📹 Video minh họa chi tiết&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.15);"&gt;
+&lt;iframe
+src="https://www.youtube.com/embed/2StXP1XaU04"
+title="Video hướng dẫn Java Stream API"
+style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;-giới-thiệu&#34;&gt;📖 Giới thiệu&lt;/h2&gt;
+&lt;h2 id="-tổng-quan-về-stream-api"&gt;💡 Tổng quan về Stream API&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Stream API&lt;/strong&gt; được giới thiệu từ &lt;strong&gt;Java 8&lt;/strong&gt;, giúp việc xử lý dữ liệu trở nên ngắn gọn, hiện đại và dễ đọc hơn.&lt;br&gt;
+Thay vì dùng vòng lặp truyền thống, bạn có thể &lt;strong&gt;“luồng hóa”&lt;/strong&gt; dữ liệu và áp dụng các thao tác như &lt;code&gt;filter()&lt;/code&gt;, &lt;code&gt;map()&lt;/code&gt;, &lt;code&gt;collect()&lt;/code&gt; để xử lý.&lt;/p&gt;</description></item><item><title>Tìm hiểu Java Collection Framework</title><link>https://thuthuy-cutei.github.io/posts/java-collection/</link><pubDate>Mon, 27 Oct 2025 10:20:00 +0700</pubDate><guid>https://thuthuy-cutei.github.io/posts/java-collection/</guid><description>&lt;h1 id="-tìm-hiểu-java-collection-framework"&gt;🧰 Tìm hiểu Java Collection Framework&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id="-giới-thiệu"&gt;📖 Giới thiệu&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Java Collection Framework (JCF)&lt;/strong&gt; là tập hợp các lớp và giao diện mạnh mẽ giúp bạn quản lý dữ liệu hiệu quả hơn.&lt;br&gt;
 Thay vì tự tạo mảng hoặc cấu trúc lưu trữ phức tạp, JCF cung cấp sẵn những công cụ như &lt;strong&gt;List&lt;/strong&gt;, &lt;strong&gt;Set&lt;/strong&gt;, &lt;strong&gt;Map&lt;/strong&gt; để xử lý dữ liệu linh hoạt.&lt;/p&gt;
 &lt;p&gt;Ví dụ:&lt;/p&gt;
@@ -69,18 +57,11 @@ Thay vì tự tạo mảng hoặc cấu trúc lưu trữ phức tạp, JCF cung 
 &lt;li&gt;&lt;code&gt;HashMap&lt;/code&gt; lưu dữ liệu theo cặp &lt;em&gt;key–value&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nhờ đó, bạn có thể thao tác, sắp xếp, tìm kiếm và lọc dữ liệu dễ dàng hơn mà không phải viết lại các thuật toán cơ bản.&lt;br&gt;
-Collection Framework cũng là nền tảng của nhiều API nâng cao khác trong Java như &lt;strong&gt;Stream API&lt;/strong&gt; hoặc &lt;strong&gt;Concurrency&lt;/strong&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>🌐 Hiểu về DOM trong JavaScript</title>
-      <link>https://thuthuy-cutei.github.io/posts/javascript-dom/</link>
-      <pubDate>Mon, 27 Oct 2025 10:10:00 +0700</pubDate>
-      <guid>https://thuthuy-cutei.github.io/posts/javascript-dom/</guid>
-      <description>&lt;h1 align=&#34;center&#34; style=&#34;color:#27ae60; font-size:2.3rem; font-weight:800; text-shadow:1px 1px 4px rgba(0,0,0,0.1);&#34;&gt;
+Collection Framework cũng là nền tảng của nhiều API nâng cao khác trong Java như &lt;strong&gt;Stream API&lt;/strong&gt; hoặc &lt;strong&gt;Concurrency&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>🌐 Hiểu về DOM trong JavaScript</title><link>https://thuthuy-cutei.github.io/posts/javascript-dom/</link><pubDate>Mon, 27 Oct 2025 10:10:00 +0700</pubDate><guid>https://thuthuy-cutei.github.io/posts/javascript-dom/</guid><description>&lt;h1 align="center" style="color:#27ae60; font-size:2.3rem; font-weight:800; text-shadow:1px 1px 4px rgba(0,0,0,0.1);"&gt;
 🌐 Hiểu về DOM trong JavaScript
 &lt;/h1&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;-giới-thiệu&#34;&gt;📘 Giới thiệu&lt;/h2&gt;
+&lt;h2 id="-giới-thiệu"&gt;📘 Giới thiệu&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;DOM (Document Object Model)&lt;/strong&gt; là &lt;strong&gt;mô hình đối tượng tài liệu&lt;/strong&gt; – cách mà trình duyệt biểu diễn cấu trúc của trang web.&lt;br&gt;
 Mỗi phần tử HTML (như &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;) đều là &lt;strong&gt;một nút (node)&lt;/strong&gt; trong cây DOM.&lt;/p&gt;
 &lt;p&gt;Nhờ DOM, JavaScript có thể:&lt;/p&gt;
@@ -90,99 +71,54 @@ Mỗi phần tử HTML (như &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;, &lt;cod
 &lt;li&gt;Xử lý các sự kiện người dùng như click, nhập liệu, cuộn trang&amp;hellip;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;💡 Nói cách khác: DOM là “cầu nối” giữa &lt;strong&gt;HTML (giao diện)&lt;/strong&gt; và &lt;strong&gt;JavaScript (hành vi)&lt;/strong&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>💡 Lập trình Hướng Đối Tượng (OOP) trong Java</title>
-      <link>https://thuthuy-cutei.github.io/posts/java-oop/</link>
-      <pubDate>Mon, 27 Oct 2025 10:10:00 +0700</pubDate>
-      <guid>https://thuthuy-cutei.github.io/posts/java-oop/</guid>
-      <description>&lt;h1 align=&#34;center&#34; style=&#34;color:#e67e22; font-size:2.4rem; font-weight:800; text-shadow:1px 1px 4px rgba(0,0,0,0.1);&#34;&gt;
+&lt;p&gt;💡 Nói cách khác: DOM là “cầu nối” giữa &lt;strong&gt;HTML (giao diện)&lt;/strong&gt; và &lt;strong&gt;JavaScript (hành vi)&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>💡 Lập trình Hướng Đối Tượng (OOP) trong Java</title><link>https://thuthuy-cutei.github.io/posts/java-oop/</link><pubDate>Mon, 27 Oct 2025 10:10:00 +0700</pubDate><guid>https://thuthuy-cutei.github.io/posts/java-oop/</guid><description>&lt;h1 align="center" style="color:#e67e22; font-size:2.4rem; font-weight:800; text-shadow:1px 1px 4px rgba(0,0,0,0.1);"&gt;
 💡 Lập trình Hướng Đối Tượng (OOP) trong Java
 &lt;/h1&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;-giới-thiệu&#34;&gt;📘 Giới thiệu&lt;/h2&gt;
+&lt;h2 id="-giới-thiệu"&gt;📘 Giới thiệu&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;OOP (Object-Oriented Programming)&lt;/strong&gt; – &lt;em&gt;Lập trình Hướng Đối Tượng&lt;/em&gt; là &lt;strong&gt;nền tảng cốt lõi của Java&lt;/strong&gt;.&lt;br&gt;
-Thay vì viết mã lệnh rời rạc, OOP cho phép bạn mô phỏng thế giới thực bằng &lt;strong&gt;đối tượng (object)&lt;/strong&gt; – nơi &lt;strong&gt;dữ liệu&lt;/strong&gt; và &lt;strong&gt;hành vi&lt;/strong&gt; được gói gọn bên trong &lt;strong&gt;lớp (class)&lt;/strong&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Giới thiệu cơ bản về Java</title>
-      <link>https://thuthuy-cutei.github.io/posts/java-intro/</link>
-      <pubDate>Mon, 27 Oct 2025 09:10:00 +0700</pubDate>
-      <guid>https://thuthuy-cutei.github.io/posts/java-intro/</guid>
-      <description>&lt;h2 id=&#34;-giới-thiệu-về-java-cơ-bản&#34;&gt;☕ Giới thiệu về &lt;strong&gt;Java Cơ Bản&lt;/strong&gt;&lt;/h2&gt;
+Thay vì viết mã lệnh rời rạc, OOP cho phép bạn mô phỏng thế giới thực bằng &lt;strong&gt;đối tượng (object)&lt;/strong&gt; – nơi &lt;strong&gt;dữ liệu&lt;/strong&gt; và &lt;strong&gt;hành vi&lt;/strong&gt; được gói gọn bên trong &lt;strong&gt;lớp (class)&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Giới thiệu cơ bản về Java</title><link>https://thuthuy-cutei.github.io/posts/java-intro/</link><pubDate>Mon, 27 Oct 2025 09:10:00 +0700</pubDate><guid>https://thuthuy-cutei.github.io/posts/java-intro/</guid><description>&lt;h2 id="-giới-thiệu-về-java-cơ-bản"&gt;☕ Giới thiệu về &lt;strong&gt;Java Cơ Bản&lt;/strong&gt;&lt;/h2&gt;
 &lt;hr&gt;
 &lt;hr&gt;
 &lt;p&gt;Java là một ngôn ngữ lập trình hướng đối tượng mạnh mẽ, ổn định và phổ biến trên toàn thế giới.&lt;br&gt;
 Nó được thiết kế với triết lý &lt;strong&gt;“Write Once, Run Anywhere”&lt;/strong&gt; — viết một lần, chạy mọi nơi.&lt;br&gt;
 Nhờ Java Virtual Machine (JVM), mã Java có thể chạy trên bất kỳ hệ điều hành nào mà không cần chỉnh sửa.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;-video-giới-thiệu-java-cơ-bản&#34;&gt;📹 Video giới thiệu Java cơ bản&lt;/h2&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.15);&#34;&gt;
-  &lt;iframe 
-      src=&#34;https://www.youtube.com/embed/-vxX0KZaI9A&#34;
-      title=&#34;Video giới thiệu cơ bản về Java&#34;
-      style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;&#34;
-      allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34;
-      allowfullscreen&gt;
-  &lt;/iframe&gt;
+&lt;h2 id="-video-giới-thiệu-java-cơ-bản"&gt;📹 Video giới thiệu Java cơ bản&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.15);"&gt;
+&lt;iframe
+src="https://www.youtube.com/embed/-vxX0KZaI9A"
+title="Video giới thiệu cơ bản về Java"
+style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen&gt;
+&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;Java cung cấp một hệ sinh thái phong phú gồm &lt;strong&gt;thư viện chuẩn (Java Standard Library)&lt;/strong&gt; và hàng ngàn framework mạnh mẽ như &lt;strong&gt;Spring&lt;/strong&gt;, &lt;strong&gt;Hibernate&lt;/strong&gt;, &lt;strong&gt;JavaFX&lt;/strong&gt;.&lt;br&gt;
-Nó được ứng dụng trong các lĩnh vực:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Giới thiệu ngôn ngữ lập trình Java</title>
-      <link>https://thuthuy-cutei.github.io/posts/java-gioi-thieu/</link>
-      <pubDate>Mon, 27 Oct 2025 09:00:00 +0700</pubDate>
-      <guid>https://thuthuy-cutei.github.io/posts/java-gioi-thieu/</guid>
-      <description>&lt;h2 id=&#34;-giới-thiệu-ngôn-ngữ-lập-trình-java&#34;&gt;☕ Giới thiệu &lt;strong&gt;Ngôn ngữ Lập trình Java&lt;/strong&gt;&lt;/h2&gt;
+Nó được ứng dụng trong các lĩnh vực:&lt;/p&gt;</description></item><item><title>Giới thiệu ngôn ngữ lập trình Java</title><link>https://thuthuy-cutei.github.io/posts/java-gioi-thieu/</link><pubDate>Mon, 27 Oct 2025 09:00:00 +0700</pubDate><guid>https://thuthuy-cutei.github.io/posts/java-gioi-thieu/</guid><description>&lt;h2 id="-giới-thiệu-ngôn-ngữ-lập-trình-java"&gt;☕ Giới thiệu &lt;strong&gt;Ngôn ngữ Lập trình Java&lt;/strong&gt;&lt;/h2&gt;
 &lt;hr&gt;
 &lt;hr&gt;
 &lt;p&gt;Java là một trong những ngôn ngữ lập trình phổ biến và mạnh mẽ nhất hiện nay.&lt;br&gt;
 Nó được phát triển bởi &lt;strong&gt;Sun Microsystems&lt;/strong&gt; (nay thuộc &lt;strong&gt;Oracle&lt;/strong&gt;) với mục tiêu &lt;em&gt;“viết một lần, chạy mọi nơi”&lt;/em&gt;.&lt;br&gt;
-Điều đó có nghĩa là bạn chỉ cần viết code Java một lần và có thể chạy trên mọi nền tảng có cài đặt &lt;strong&gt;Java Virtual Machine (JVM)&lt;/strong&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://thuthuy-cutei.github.io/posts/javascript-async/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://thuthuy-cutei.github.io/posts/javascript-async/</guid>
-      <description>&lt;h1 align=&#34;center&#34; style=&#34;color:#d32f2f; font-size:2.4rem; font-weight:800; text-shadow:1px 1px 4px rgba(0,0,0,0.1);&#34;&gt;
+Điều đó có nghĩa là bạn chỉ cần viết code Java một lần và có thể chạy trên mọi nền tảng có cài đặt &lt;strong&gt;Java Virtual Machine (JVM)&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title/><link>https://thuthuy-cutei.github.io/posts/javascript-async/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thuthuy-cutei.github.io/posts/javascript-async/</guid><description>&lt;h1 align="center" style="color:#d32f2f; font-size:2.4rem; font-weight:800; text-shadow:1px 1px 4px rgba(0,0,0,0.1);"&gt;
 ⚡ Async/Await – Viết code bất đồng bộ như đồng bộ
 &lt;/h1&gt;
 &lt;p&gt;Lập trình bất đồng bộ (asynchronous) là khái niệm quan trọng trong JavaScript. Nó giúp code không bị &amp;ldquo;đơ&amp;rdquo; khi chờ các tác vụ tốn thời gian như tải dữ liệu, đọc file hay truy cập API.&lt;/p&gt;
-&lt;p&gt;Từ ES8, JS giới thiệu cú pháp async/await (được xây dựng trên Promises) giúp việc viết code bất đồng bộ trở nên dễ hiểu, sạch sẽ hơn và trông giống như code đồng bộ (synchronous) thông thường.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://thuthuy-cutei.github.io/posts/javascript-event/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://thuthuy-cutei.github.io/posts/javascript-event/</guid>
-      <description>&lt;h1 align=&#34;center&#34; style=&#34;color:#c2185b; font-size:2.4rem; font-weight:800; text-shadow:1px 1px 4px rgba(0,0,0,0.1);&#34;&gt;
+&lt;p&gt;Từ ES8, JS giới thiệu cú pháp async/await (được xây dựng trên Promises) giúp việc viết code bất đồng bộ trở nên dễ hiểu, sạch sẽ hơn và trông giống như code đồng bộ (synchronous) thông thường.&lt;/p&gt;</description></item><item><title/><link>https://thuthuy-cutei.github.io/posts/javascript-event/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thuthuy-cutei.github.io/posts/javascript-event/</guid><description>&lt;h1 align="center" style="color:#c2185b; font-size:2.4rem; font-weight:800; text-shadow:1px 1px 4px rgba(0,0,0,0.1);"&gt;
 📝 Xử lý sự kiện (Event) trong JavaScript
 &lt;/h1&gt;
 &lt;p&gt;Sự kiện (Event) trong JavaScript giúp website phản hồi các hành động của người dùng như click chuột, nhập dữ liệu, cuộn trang, v.v. Nhờ event, bạn có thể biến trang web tĩnh thành một ứng dụng tương tác sinh động.&lt;/p&gt;
 &lt;p&gt;📺 Video Hướng Dẫn Chi Tiết&lt;/p&gt;
 &lt;!-- Nhúng video YouTube: https://www.youtube.com/watch?v=ax_tbXygZXQ --&gt;
-&lt;div class=&#34;video-container&#34; style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);&#34;&gt;
-&lt;iframe src=&#34;https://www.youtube.com/embed/ax_tbXygZXQ&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34;&gt;&lt;/iframe&gt;
+&lt;div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"&gt;
+&lt;iframe src="https://www.youtube.com/embed/ax_tbXygZXQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;ol&gt;
 &lt;li&gt;Cơ chế Hoạt động của Event&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Mỗi khi một hành động xảy ra trên trình duyệt (như tải trang, click chuột, nhấn phím), một &amp;ldquo;Event Object&amp;rdquo; sẽ được tạo ra. Event Listener (bộ lắng nghe sự kiện) được gán vào các phần tử DOM sẽ bắt sự kiện này và kích hoạt các hàm xử lý tương ứng.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://thuthuy-cutei.github.io/posts/javascript-object/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://thuthuy-cutei.github.io/posts/javascript-object/</guid>
-      <description>&lt;p&gt;title: &amp;ldquo;JavaScript Object – Khái niệm nền tảng&amp;rdquo; date: 2025-11-01T10:00:00+07:00 draft: false author: &amp;ldquo;Vũ Thị Thu Thủy&amp;rdquo; featuredImage: &amp;ldquo;images/javascript-object-featured.png&amp;rdquo; coverAlt: &amp;ldquo;Hình ảnh minh họa JavaScript Object&amp;rdquo; coverCaption: &amp;ldquo;Nguồn: Vũ Thị Thu Thủy Blog&amp;rdquo;&lt;/p&gt;
-&lt;h1 align=&#34;center&#34; style=&#34;color:#e74c3c; font-size:2.4rem; font-weight:800; text-shadow:1px 1px 4px rgba(0,0,0,0.1);&#34;&gt;
+&lt;p&gt;Mỗi khi một hành động xảy ra trên trình duyệt (như tải trang, click chuột, nhấn phím), một &amp;ldquo;Event Object&amp;rdquo; sẽ được tạo ra. Event Listener (bộ lắng nghe sự kiện) được gán vào các phần tử DOM sẽ bắt sự kiện này và kích hoạt các hàm xử lý tương ứng.&lt;/p&gt;</description></item><item><title/><link>https://thuthuy-cutei.github.io/posts/javascript-object/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thuthuy-cutei.github.io/posts/javascript-object/</guid><description>&lt;p&gt;title: &amp;ldquo;JavaScript Object – Khái niệm nền tảng&amp;rdquo; date: 2025-11-01T10:00:00+07:00 draft: false author: &amp;ldquo;Vũ Thị Thu Thủy&amp;rdquo; featuredImage: &amp;ldquo;images/javascript-object-featured.png&amp;rdquo; coverAlt: &amp;ldquo;Hình ảnh minh họa JavaScript Object&amp;rdquo; coverCaption: &amp;ldquo;Nguồn: Vũ Thị Thu Thủy Blog&amp;rdquo;&lt;/p&gt;
+&lt;h1 align="center" style="color:#e74c3c; font-size:2.4rem; font-weight:800; text-shadow:1px 1px 4px rgba(0,0,0,0.1);"&gt;
 📦 JavaScript Object – Xương sống của Dữ liệu
 &lt;/h1&gt;
-&lt;p&gt;Object (Đối tượng) là một khái niệm cốt lõi trong JavaScript, được coi là kiểu dữ liệu phức tạp nhất. Object cho phép bạn lưu trữ các bộ sưu tập dữ liệu (thuộc tính) và các chức năng (phương thức) liên quan lại với nhau, mô tả một &amp;ldquo;thực thể&amp;rdquo; trong thế giới thực.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;p&gt;Object (Đối tượng) là một khái niệm cốt lõi trong JavaScript, được coi là kiểu dữ liệu phức tạp nhất. Object cho phép bạn lưu trữ các bộ sưu tập dữ liệu (thuộc tính) và các chức năng (phương thức) liên quan lại với nhau, mô tả một &amp;ldquo;thực thể&amp;rdquo; trong thế giới thực.&lt;/p&gt;</description></item></channel></rss>

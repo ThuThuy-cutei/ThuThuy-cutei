@@ -1,264 +1,163 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>💡 Lập trình Hướng Đối Tượng (OOP) trong Java | Blog cá nhân của Vũ Thị Thu Thủy</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <link rel="stylesheet" href="/css/main.css">
-</head>
-<body>
-    
-    <header>
-        <h1>
-            <a href="/" style="text-decoration: none; color: inherit;">Blog cá nhân của Vũ Thị Thu Thủy</a>
-        </h1>
-        <nav>
-            <ul>
-                
-                <li>
-                    <a href="/" >Trang chủ</a>
-                </li>
-                
-                <li>
-                    <a href="/about/" >Giới thiệu</a>
-                </li>
-                
-                <li>
-                    <a href="/posts/" class="active">Bài viết</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="profile-page single-content"> 
-            
-            <div class="content">
-                <h1 align="center" style="color:#e67e22; font-size:2.4rem; font-weight:800; text-shadow:1px 1px 4px rgba(0,0,0,0.1);">
-💡 Lập trình Hướng Đối Tượng (OOP) trong Java
-</h1>
-<hr>
-<h2 id="-giới-thiệu">📘 Giới thiệu</h2>
-<p><strong>OOP (Object-Oriented Programming)</strong> – <em>Lập trình Hướng Đối Tượng</em> là <strong>nền tảng cốt lõi của Java</strong>.<br>
-Thay vì viết mã lệnh rời rạc, OOP cho phép bạn mô phỏng thế giới thực bằng <strong>đối tượng (object)</strong> – nơi <strong>dữ liệu</strong> và <strong>hành vi</strong> được gói gọn bên trong <strong>lớp (class)</strong>.</p>
-<blockquote>
-<p>🎯 Mục tiêu của OOP là giúp code <strong>dễ đọc</strong>, <strong>dễ bảo trì</strong>, <strong>tái sử dụng</strong> và <strong>mở rộng linh hoạt</strong>.</p>
-</blockquote>
-<hr>
-<h2 id="-video-minh-họa-oop-trong-java">🎥 Video minh họa: OOP trong Java</h2>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.15); margin-bottom: 20px;">
-  <iframe 
-      src="https://www.youtube.com/embed/qwPvkhemvHA"
-      title="Video hướng dẫn OOP trong Java"
-      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen>
-  </iframe>
-</div>
-<hr>
-<h2 id="-1-khái-niệm-cơ-bản-trong-oop">🧩 1️⃣ Khái niệm cơ bản trong OOP</h2>
-<table>
-  <thead>
-      <tr>
-          <th>Thuật ngữ</th>
-          <th>Mô tả</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Class (Lớp)</strong></td>
-          <td>Khuôn mẫu để tạo ra các đối tượng.</td>
-      </tr>
-      <tr>
-          <td><strong>Object (Đối tượng)</strong></td>
-          <td>Thực thể cụ thể được tạo ra từ lớp.</td>
-      </tr>
-      <tr>
-          <td><strong>Attribute (Thuộc tính)</strong></td>
-          <td>Dữ liệu mô tả đối tượng.</td>
-      </tr>
-      <tr>
-          <td><strong>Method (Phương thức)</strong></td>
-          <td>Hành vi hoặc chức năng của đối tượng.</td>
-      </tr>
-  </tbody>
-</table>
-<p>📘 Ví dụ:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Student</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Thuộc tính (attributes)</span>
-</span></span><span style="display:flex;"><span>    String name;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> age;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Phương thức (methods)</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">study</span>() {
-</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; đang học lập trình Java.&#34;</span>);
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
-</span></span><span style="display:flex;"><span>        Student s1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Student(); <span style="color:#75715e">// Tạo đối tượng</span>
-</span></span><span style="display:flex;"><span>        s1.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Thủy&#34;</span>;
-</span></span><span style="display:flex;"><span>        s1.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> 21;
-</span></span><span style="display:flex;"><span>        s1.<span style="color:#a6e22e">study</span>();
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>Kết quả:
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>css
-</span></span><span style="display:flex;"><span>Sao chép mã
-</span></span><span style="display:flex;"><span>Thủy đang học lập trình Java.
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">🧱</span> 2️<span style="color:#960050;background-color:#1e0010">⃣</span> Encapsulation (Đóng gói)
-</span></span><span style="display:flex;"><span>Đóng gói nghĩa là che giấu dữ liệu bên trong lớp và chỉ cho phép truy cập thông qua các getter<span style="color:#f92672">/</span>setter.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>java
-</span></span><span style="display:flex;"><span>Sao chép mã
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Account</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">double</span> balance; <span style="color:#75715e">// chỉ nội bộ lớp truy cập</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setBalance</span>(<span style="color:#66d9ef">double</span> amount) {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (amount <span style="color:#f92672">&gt;</span> 0) balance <span style="color:#f92672">=</span> amount;
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">double</span> <span style="color:#a6e22e">getBalance</span>() {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> balance;
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">✅</span> Lợi ích:
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Bảo vệ dữ liệu khỏi truy cập sai.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Dễ kiểm soát và bảo trì.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">🧬</span> 3️<span style="color:#960050;background-color:#1e0010">⃣</span> Inheritance (Kế thừa)
-</span></span><span style="display:flex;"><span>Kế thừa cho phép lớp con tái sử dụng thuộc tính và phương thức của lớp cha.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>java
-</span></span><span style="display:flex;"><span>Sao chép mã
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Animal</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">eat</span>() {
-</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Đang ăn...&#34;</span>);
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Dog</span> <span style="color:#66d9ef">extends</span> Animal {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">bark</span>() {
-</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Gâu gâu!&#34;</span>);
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
-</span></span><span style="display:flex;"><span>        Dog dog <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Dog();
-</span></span><span style="display:flex;"><span>        dog.<span style="color:#a6e22e">eat</span>();  <span style="color:#75715e">// từ lớp cha</span>
-</span></span><span style="display:flex;"><span>        dog.<span style="color:#a6e22e">bark</span>(); <span style="color:#75715e">// của lớp con</span>
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">🧠</span> Giúp tái sử dụng code và tạo cấu trúc phân cấp dễ mở rộng.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">🎭</span> 4️<span style="color:#960050;background-color:#1e0010">⃣</span> Polymorphism (Đa hình)
-</span></span><span style="display:flex;"><span>Đa hình cho phép cùng một phương thức có hành vi khác nhau tùy đối tượng cụ thể.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>java
-</span></span><span style="display:flex;"><span>Sao chép mã
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Shape</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">draw</span>() {
-</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Vẽ hình...&#34;</span>);
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Circle</span> <span style="color:#66d9ef">extends</span> Shape {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">draw</span>() {
-</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Vẽ hình tròn 🟢&#34;</span>);
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Square</span> <span style="color:#66d9ef">extends</span> Shape {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">draw</span>() {
-</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Vẽ hình vuông 🟥&#34;</span>);
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
-</span></span><span style="display:flex;"><span>        Shape s1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Circle();
-</span></span><span style="display:flex;"><span>        Shape s2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Square();
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        s1.<span style="color:#a6e22e">draw</span>();
-</span></span><span style="display:flex;"><span>        s2.<span style="color:#a6e22e">draw</span>();
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>Kết quả:
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>bash
-</span></span><span style="display:flex;"><span>Sao chép mã
-</span></span><span style="display:flex;"><span>Vẽ hình tròn <span style="color:#960050;background-color:#1e0010">🟢</span>
-</span></span><span style="display:flex;"><span>Vẽ hình vuông <span style="color:#960050;background-color:#1e0010">🟥</span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">💡</span> Giúp code linh hoạt <span style="color:#960050;background-color:#1e0010">–</span> có thể mở rộng hành vi mà không cần sửa mã gốc.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">🧠</span> 5️<span style="color:#960050;background-color:#1e0010">⃣</span> Abstraction (Trừu tượng)
-</span></span><span style="display:flex;"><span>Trừu tượng nghĩa là chỉ hiển thị <span style="color:#960050;background-color:#1e0010">“</span>những gì cần thiết<span style="color:#960050;background-color:#1e0010">”</span>, ẩn đi chi tiết bên trong.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>java
-</span></span><span style="display:flex;"><span>Sao chép mã
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Vehicle</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">start</span>(); <span style="color:#75715e">// phương thức trừu tượng</span>
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Car</span> <span style="color:#66d9ef">extends</span> Vehicle {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">start</span>() {
-</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Xe hơi khởi động bằng chìa khóa.&#34;</span>);
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Bike</span> <span style="color:#66d9ef">extends</span> Vehicle {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">start</span>() {
-</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Xe máy khởi động bằng nút bấm.&#34;</span>);
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
-</span></span><span style="display:flex;"><span>        Vehicle v <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Car();
-</span></span><span style="display:flex;"><span>        v.<span style="color:#a6e22e">start</span>();
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">🧩</span> Trừu tượng giúp thiết kế chương trình rõ ràng và giảm sự phức tạp.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">🚀</span> 6️<span style="color:#960050;background-color:#1e0010">⃣</span> Tổng kết
-</span></span><span style="display:flex;"><span>Nguyên lý OOP	Ý nghĩa chính	Ví dụ
-</span></span><span style="display:flex;"><span>Encapsulation	Bảo vệ dữ liệu, chỉ cho phép truy cập qua phương thức.	<span style="color:#66d9ef">private</span>, get<span style="color:#f92672">/</span>set
-</span></span><span style="display:flex;"><span>Inheritance	Tái sử dụng code, tạo mối quan hệ cha <span style="color:#960050;background-color:#1e0010">–</span> con.	<span style="color:#66d9ef">extends</span>
-</span></span><span style="display:flex;"><span>Polymorphism	Một hành vi <span style="color:#960050;background-color:#1e0010">–</span> nhiều cách thực hiện khác nhau.	method overriding
-</span></span><span style="display:flex;"><span>Abstraction	Ẩn chi tiết, chỉ cung cấp giao diện chính.	<span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">class</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">interface</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">💬</span> Kết luận
-</span></span><span style="display:flex;"><span>Lập trình hướng đối tượng là linh hồn của Java.
-</span></span><span style="display:flex;"><span>Nắm vững 4 nguyên lý OOP giúp bạn:
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Thiết kế hệ thống logic, rõ ràng
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Giảm lỗi khi mở rộng dự án
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Là nền tảng để học Spring Boot, Hibernate, Android và nhiều framework khác.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">✨</span> <span style="color:#960050;background-color:#1e0010">“</span>Học OOP không chỉ là học cú pháp <span style="color:#960050;background-color:#1e0010">–</span> mà là học cách tư duy như một nhà phát triển chuyên nghiệp.<span style="color:#960050;background-color:#1e0010">”</span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">—</span> Vũ Thị Thu Thủy
-</span></span></code></pre></div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Vũ Thị Thu Thủy. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
+<!doctype html><html lang=vi><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>💡 Lập trình Hướng Đối Tượng (OOP) trong Java | Blog cá nhân của Vũ Thị Thu Thủy</title><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel=stylesheet><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css><link rel=stylesheet href=https://thuthuy-cutei.github.io/css/main.css></head><body><header><h1><a href=https://thuthuy-cutei.github.io/ style=text-decoration:none;color:inherit>Blog cá nhân của Vũ Thị Thu Thủy</a></h1><nav><ul><li><a href=https://thuthuy-cutei.github.io/>Trang chủ</a></li><li><a href=https://thuthuy-cutei.github.io/about/>Giới thiệu</a></li><li><a href=https://thuthuy-cutei.github.io/posts/ class=active>Bài viết</a></li></ul></nav></header><main><section class="profile-page single-content"><div class=content><article class=post-article><header><h1 class=post-title>💡 Lập trình Hướng Đối Tượng (OOP) trong Java</h1><div class=post-meta><span class=meta-date><i class="far fa-calendar-alt"></i> October 27, 2025</span>
+<span class=meta-author><i class="fas fa-user"></i> Vũ Thị Thu Thủy</span>
+<span class=meta-reading-time><i class="far fa-clock"></i> 4 phút đọc</span></div></header><div class=post-body><h1 align=center style="color:#e67e22;font-size:2.4rem;font-weight:800;text-shadow:1px 1px 4px rgba(0,0,0,.1)">💡 Lập trình Hướng Đối Tượng (OOP) trong Java</h1><hr><h2 id=-giới-thiệu>📘 Giới thiệu</h2><p><strong>OOP (Object-Oriented Programming)</strong> – <em>Lập trình Hướng Đối Tượng</em> là <strong>nền tảng cốt lõi của Java</strong>.<br>Thay vì viết mã lệnh rời rạc, OOP cho phép bạn mô phỏng thế giới thực bằng <strong>đối tượng (object)</strong> – nơi <strong>dữ liệu</strong> và <strong>hành vi</strong> được gói gọn bên trong <strong>lớp (class)</strong>.</p><blockquote><p>🎯 Mục tiêu của OOP là giúp code <strong>dễ đọc</strong>, <strong>dễ bảo trì</strong>, <strong>tái sử dụng</strong> và <strong>mở rộng linh hoạt</strong>.</p></blockquote><hr><h2 id=-video-minh-họa-oop-trong-java>🎥 Video minh họa: OOP trong Java</h2><div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;border-radius:12px;box-shadow:0 0 10px rgba(0,0,0,.15);margin-bottom:20px"><iframe src=https://www.youtube.com/embed/qwPvkhemvHA title="Video hướng dẫn OOP trong Java" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><h2 id=-1-khái-niệm-cơ-bản-trong-oop>🧩 1️⃣ Khái niệm cơ bản trong OOP</h2><table><thead><tr><th>Thuật ngữ</th><th>Mô tả</th></tr></thead><tbody><tr><td><strong>Class (Lớp)</strong></td><td>Khuôn mẫu để tạo ra các đối tượng.</td></tr><tr><td><strong>Object (Đối tượng)</strong></td><td>Thực thể cụ thể được tạo ra từ lớp.</td></tr><tr><td><strong>Attribute (Thuộc tính)</strong></td><td>Dữ liệu mô tả đối tượng.</td></tr><tr><td><strong>Method (Phương thức)</strong></td><td>Hành vi hoặc chức năng của đối tượng.</td></tr></tbody></table><p>📘 Ví dụ:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Student</span> {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Thuộc tính (attributes)</span>
+</span></span><span style=display:flex><span>    String name;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> age;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Phương thức (methods)</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>study</span>() {
+</span></span><span style=display:flex><span>        System.<span style=color:#a6e22e>out</span>.<span style=color:#a6e22e>println</span>(name <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34; đang học lập trình Java.&#34;</span>);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Main</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>static</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>main</span>(String<span style=color:#f92672>[]</span> args) {
+</span></span><span style=display:flex><span>        Student s1 <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> Student(); <span style=color:#75715e>// Tạo đối tượng</span>
+</span></span><span style=display:flex><span>        s1.<span style=color:#a6e22e>name</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;Thủy&#34;</span>;
+</span></span><span style=display:flex><span>        s1.<span style=color:#a6e22e>age</span> <span style=color:#f92672>=</span> 21;
+</span></span><span style=display:flex><span>        s1.<span style=color:#a6e22e>study</span>();
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>Kết quả:
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>css
+</span></span><span style=display:flex><span>Sao chép mã
+</span></span><span style=display:flex><span>Thủy đang học lập trình Java.
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>🧱</span> 2️<span style=color:#960050;background-color:#1e0010>⃣</span> Encapsulation (Đóng gói)
+</span></span><span style=display:flex><span>Đóng gói nghĩa là che giấu dữ liệu bên trong lớp và chỉ cho phép truy cập thông qua các getter<span style=color:#f92672>/</span>setter.
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>java
+</span></span><span style=display:flex><span>Sao chép mã
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Account</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>double</span> balance; <span style=color:#75715e>// chỉ nội bộ lớp truy cập</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>setBalance</span>(<span style=color:#66d9ef>double</span> amount) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> (amount <span style=color:#f92672>&gt;</span> 0) balance <span style=color:#f92672>=</span> amount;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>double</span> <span style=color:#a6e22e>getBalance</span>() {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> balance;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>✅</span> Lợi ích:
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Bảo vệ dữ liệu khỏi truy cập sai.
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Dễ kiểm soát và bảo trì.
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>🧬</span> 3️<span style=color:#960050;background-color:#1e0010>⃣</span> Inheritance (Kế thừa)
+</span></span><span style=display:flex><span>Kế thừa cho phép lớp con tái sử dụng thuộc tính và phương thức của lớp cha.
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>java
+</span></span><span style=display:flex><span>Sao chép mã
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Animal</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>eat</span>() {
+</span></span><span style=display:flex><span>        System.<span style=color:#a6e22e>out</span>.<span style=color:#a6e22e>println</span>(<span style=color:#e6db74>&#34;Đang ăn...&#34;</span>);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Dog</span> <span style=color:#66d9ef>extends</span> Animal {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>bark</span>() {
+</span></span><span style=display:flex><span>        System.<span style=color:#a6e22e>out</span>.<span style=color:#a6e22e>println</span>(<span style=color:#e6db74>&#34;Gâu gâu!&#34;</span>);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Main</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>static</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>main</span>(String<span style=color:#f92672>[]</span> args) {
+</span></span><span style=display:flex><span>        Dog dog <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> Dog();
+</span></span><span style=display:flex><span>        dog.<span style=color:#a6e22e>eat</span>();  <span style=color:#75715e>// từ lớp cha</span>
+</span></span><span style=display:flex><span>        dog.<span style=color:#a6e22e>bark</span>(); <span style=color:#75715e>// của lớp con</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>🧠</span> Giúp tái sử dụng code và tạo cấu trúc phân cấp dễ mở rộng.
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>🎭</span> 4️<span style=color:#960050;background-color:#1e0010>⃣</span> Polymorphism (Đa hình)
+</span></span><span style=display:flex><span>Đa hình cho phép cùng một phương thức có hành vi khác nhau tùy đối tượng cụ thể.
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>java
+</span></span><span style=display:flex><span>Sao chép mã
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Shape</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>draw</span>() {
+</span></span><span style=display:flex><span>        System.<span style=color:#a6e22e>out</span>.<span style=color:#a6e22e>println</span>(<span style=color:#e6db74>&#34;Vẽ hình...&#34;</span>);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Circle</span> <span style=color:#66d9ef>extends</span> Shape {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>draw</span>() {
+</span></span><span style=display:flex><span>        System.<span style=color:#a6e22e>out</span>.<span style=color:#a6e22e>println</span>(<span style=color:#e6db74>&#34;Vẽ hình tròn 🟢&#34;</span>);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Square</span> <span style=color:#66d9ef>extends</span> Shape {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>draw</span>() {
+</span></span><span style=display:flex><span>        System.<span style=color:#a6e22e>out</span>.<span style=color:#a6e22e>println</span>(<span style=color:#e6db74>&#34;Vẽ hình vuông 🟥&#34;</span>);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Main</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>static</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>main</span>(String<span style=color:#f92672>[]</span> args) {
+</span></span><span style=display:flex><span>        Shape s1 <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> Circle();
+</span></span><span style=display:flex><span>        Shape s2 <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> Square();
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        s1.<span style=color:#a6e22e>draw</span>();
+</span></span><span style=display:flex><span>        s2.<span style=color:#a6e22e>draw</span>();
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>Kết quả:
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>bash
+</span></span><span style=display:flex><span>Sao chép mã
+</span></span><span style=display:flex><span>Vẽ hình tròn <span style=color:#960050;background-color:#1e0010>🟢</span>
+</span></span><span style=display:flex><span>Vẽ hình vuông <span style=color:#960050;background-color:#1e0010>🟥</span>
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>💡</span> Giúp code linh hoạt <span style=color:#960050;background-color:#1e0010>–</span> có thể mở rộng hành vi mà không cần sửa mã gốc.
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>🧠</span> 5️<span style=color:#960050;background-color:#1e0010>⃣</span> Abstraction (Trừu tượng)
+</span></span><span style=display:flex><span>Trừu tượng nghĩa là chỉ hiển thị <span style=color:#960050;background-color:#1e0010>“</span>những gì cần thiết<span style=color:#960050;background-color:#1e0010>”</span>, ẩn đi chi tiết bên trong.
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>java
+</span></span><span style=display:flex><span>Sao chép mã
+</span></span><span style=display:flex><span><span style=color:#66d9ef>abstract</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Vehicle</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>abstract</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>start</span>(); <span style=color:#75715e>// phương thức trừu tượng</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Car</span> <span style=color:#66d9ef>extends</span> Vehicle {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>start</span>() {
+</span></span><span style=display:flex><span>        System.<span style=color:#a6e22e>out</span>.<span style=color:#a6e22e>println</span>(<span style=color:#e6db74>&#34;Xe hơi khởi động bằng chìa khóa.&#34;</span>);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Bike</span> <span style=color:#66d9ef>extends</span> Vehicle {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>start</span>() {
+</span></span><span style=display:flex><span>        System.<span style=color:#a6e22e>out</span>.<span style=color:#a6e22e>println</span>(<span style=color:#e6db74>&#34;Xe máy khởi động bằng nút bấm.&#34;</span>);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Main</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>static</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>main</span>(String<span style=color:#f92672>[]</span> args) {
+</span></span><span style=display:flex><span>        Vehicle v <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> Car();
+</span></span><span style=display:flex><span>        v.<span style=color:#a6e22e>start</span>();
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>🧩</span> Trừu tượng giúp thiết kế chương trình rõ ràng và giảm sự phức tạp.
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>🚀</span> 6️<span style=color:#960050;background-color:#1e0010>⃣</span> Tổng kết
+</span></span><span style=display:flex><span>Nguyên lý OOP	Ý nghĩa chính	Ví dụ
+</span></span><span style=display:flex><span>Encapsulation	Bảo vệ dữ liệu, chỉ cho phép truy cập qua phương thức.	<span style=color:#66d9ef>private</span>, get<span style=color:#f92672>/</span>set
+</span></span><span style=display:flex><span>Inheritance	Tái sử dụng code, tạo mối quan hệ cha <span style=color:#960050;background-color:#1e0010>–</span> con.	<span style=color:#66d9ef>extends</span>
+</span></span><span style=display:flex><span>Polymorphism	Một hành vi <span style=color:#960050;background-color:#1e0010>–</span> nhiều cách thực hiện khác nhau.	method overriding
+</span></span><span style=display:flex><span>Abstraction	Ẩn chi tiết, chỉ cung cấp giao diện chính.	<span style=color:#66d9ef>abstract</span> <span style=color:#66d9ef>class</span><span style=color:#960050;background-color:#1e0010>,</span> <span style=color:#a6e22e>interface</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>💬</span> Kết luận
+</span></span><span style=display:flex><span>Lập trình hướng đối tượng là linh hồn của Java.
+</span></span><span style=display:flex><span>Nắm vững 4 nguyên lý OOP giúp bạn:
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Thiết kế hệ thống logic, rõ ràng
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Giảm lỗi khi mở rộng dự án
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Là nền tảng để học Spring Boot, Hibernate, Android và nhiều framework khác.
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>✨</span> <span style=color:#960050;background-color:#1e0010>“</span>Học OOP không chỉ là học cú pháp <span style=color:#960050;background-color:#1e0010>–</span> mà là học cách tư duy như một nhà phát triển chuyên nghiệp.<span style=color:#960050;background-color:#1e0010>”</span>
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>—</span> Vũ Thị Thu Thủy
+</span></span></code></pre></div></div><footer></footer></article></div></section></main><footer><p>&copy; 2025 Vũ Thị Thu Thủy. All rights reserved.</p></footer></body></html>
